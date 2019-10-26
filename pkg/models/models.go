@@ -1,7 +1,6 @@
 package models
 
 import (
-	"database/sql"
 	"errors"
 	"time"
 )
@@ -14,8 +13,8 @@ var (
 
 type Snippet struct {
 	ID      int
-	Title   sql.NullString
-	Content sql.NullString
+	Title   string
+	Content string
 	Created time.Time
 	Expires time.Time
 }
